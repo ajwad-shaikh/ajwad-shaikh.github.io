@@ -1,18 +1,17 @@
 ---
 title: 'About Me'
-avatar: './me.jpg'
+avatar: './me_coffee.jpg'
 skills:
-  - JavaScript (ES6+)
-  - HTML & (S)CSS
+  - Android Java
   - React
-  - Vue
   - Node.js
-  - Express
-  - NativeScript
+  - Firebase + GCP
+  - React Native
+  - C/C++ & Python
 ---
 
-Hello! I'm Brittany, a software engineer based in Boston, MA who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.
+Hi, I'm Ajwad, a software professional based in Mumbai who works tirelessly to achieve software that empowers people not just businesses. I always aim to deliver highly scalable applications and hence, insist over writing the most efficient code while maintaining agreement on code-maintenance.
 
-Shortly after graduating from [Northeastern University](https://www.ccis.northeastern.edu/), I joined the engineering team at [Upstatement](https://www.upstatement.com/) where I work on a wide variety of interesting and meaningful projects on a daily basis.
+I will be graduating with a B.Tech in CSE from [IIITDM, Jabalpur](https://www.iiitdmj.ac.in/) in May 2021. Currently, I am actively seeking a 6-month internship from December 2020 onwards as a part of my academic internship semester.
 
 Here are a few technologies I've been working with recently:
