@@ -96,6 +96,8 @@ export const pageQuery = graphql`
             }
             tech
             github
+            behance
+            playstore
             external
           }
           html
@@ -115,6 +117,8 @@ export const pageQuery = graphql`
             title
             tech
             github
+            behance
+            playstore
             external
           }
           html

@@ -222,8 +222,7 @@ const Featured = ({ data }) => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover } = frontmatter;
-
+            const { external, title, tech, github, behance, playstore, cover } = frontmatter;
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <StyledContent>
@@ -259,6 +258,24 @@ const Featured = ({ data }) => {
                         <FormattedIcon name="GitHub" />
                       </a>
                     )}
+                    {behance && (
+                      <a
+                        href={behance}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        aria-label="Behance Link">
+                        <FormattedIcon name="Behance" />
+                      </a>
+                    )}
+                    {playstore && (
+                      <a
+                        href={playstore}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        aria-label="Google PlayStore Link">
+                        <FormattedIcon name="PlayStore" />
+                      </a>
+                    )}
                     {external && (
                       <a
                         href={external}
@@ -272,7 +289,17 @@ const Featured = ({ data }) => {
                 </StyledContent>
 
                 <StyledImgContainer
-                  href={external ? external : github ? github : '#'}
+                  href={
+                    external
+                      ? external
+                      : behance
+                        ? behance
+                        : github
+                          ? github
+                          : playstore
+                            ? playstore
+                            : '#'
+                  }
                   target="_blank"
                   rel="nofollow noopener noreferrer">
                   <StyledFeaturedImg fluid={cover.childImageSharp.fluid} alt={title} />
