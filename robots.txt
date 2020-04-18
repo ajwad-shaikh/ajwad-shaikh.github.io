@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://brittanychiang.com/sitemap.xml
-Host: https://brittanychiang.com
+Sitemap: https://ajwad-shaikh.github.io/sitemap.xml
+Host: https://ajwad-shaikh.github.io
