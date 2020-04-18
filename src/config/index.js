@@ -4,7 +4,7 @@ module.exports = {
     'Ajwad Shaikh is a software development engineer, based in Mumbai, exploring opportunities to build and democratize technology for the next billion internet users with a keen focus on mobile.',
   siteKeywords:
     'Ajwad Shaikh, Ajwad, Shaikh, ajwad-shaikh, software engineer, backend engineer, web developer, javascript, android, IIITDM Jabalpur, react, mobile developer',
-  siteUrl: 'https://brittanychiang.com',
+  siteUrl: 'https://ajwad-shaikh.github.io',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-99312687-3',
   googleVerification: '',
