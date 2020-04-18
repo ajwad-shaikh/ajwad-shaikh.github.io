@@ -155,7 +155,7 @@ const Projects = ({ data }) => {
           {projectsToShow &&
             projectsToShow.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { github, external, title, tech } = frontmatter;
+              const { github, external, playstore, title, tech } = frontmatter;
               return (
                 <CSSTransition
                   key={i}
@@ -183,6 +183,15 @@ const Projects = ({ data }) => {
                                 rel="nofollow noopener noreferrer"
                                 aria-label="GitHub Link">
                                 <FormattedIcon name="GitHub" />
+                              </StyledIconLink>
+                            )}
+                            {playstore && (
+                              <StyledIconLink
+                                href={playstore}
+                                target="_blank"
+                                rel="nofollow noopener noreferrer"
+                                aria-label="Google PlayStore Link">
+                                <FormattedIcon name="PlayStore" />
                               </StyledIconLink>
                             )}
                             {external && (

@@ -137,8 +137,8 @@ const ArchivePage = ({ location, data }) => {
                     date,
                     github,
                     external,
-                    ios,
                     android,
+                    behance,
                     title,
                     tech,
                     company,
@@ -184,15 +184,6 @@ const ArchivePage = ({ location, data }) => {
                               <FormattedIcon name="GitHub" />
                             </a>
                           )}
-                          {ios && (
-                            <a
-                              href={ios}
-                              target="_blank"
-                              rel="nofollow noopener noreferrer"
-                              aria-label="Apple App Store Link">
-                              <FormattedIcon name="AppStore" />
-                            </a>
-                          )}
                           {android && (
                             <a
                               href={android}
@@ -200,6 +191,15 @@ const ArchivePage = ({ location, data }) => {
                               rel="nofollow noopener noreferrer"
                               aria-label="Google Play Store Link">
                               <FormattedIcon name="PlayStore" />
+                            </a>
+                          )}
+                          {behance && (
+                            <a
+                              href={behance}
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label="Behance Link">
+                              <FormattedIcon name="Behance" />
                             </a>
                           )}
                         </span>
@@ -235,9 +235,9 @@ export const pageQuery = graphql`
             tech
             github
             external
-            ios
             android
             company
+            behance
           }
           html
         }

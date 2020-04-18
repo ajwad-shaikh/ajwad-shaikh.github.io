@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {
   IconAppStore,
   IconBehance,
-  IconCodepen,
+  IconCodeChef,
   IconExternal,
   IconFolder,
   IconFork,
@@ -25,8 +25,8 @@ const FormattedIcon = ({ name }) => {
       return <IconAppStore />;
     case 'Behance':
       return <IconBehance />;
-    case 'Codepen':
-      return <IconCodepen />;
+    case 'CodeChef':
+      return <IconCodeChef />;
     case 'External':
       return <IconExternal />;
     case 'Folder':

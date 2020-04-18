@@ -23,16 +23,16 @@ module.exports = {
       url: 'https://www.linkedin.com/in/ajwad-shaikh',
     },
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/ajwad-shaikh',
-    },
-    {
       name: 'Instagram',
       url: 'https://www.instagram.com/hash.include_ajwad_',
     },
     {
       name: 'Twitter',
       url: 'https://twitter.com/AjwadShaikh3',
+    },
+    {
+      name: 'CodeChef',
+      url: 'https://codechef.com/users/ajwad_code0101',
     },
   ],
 
