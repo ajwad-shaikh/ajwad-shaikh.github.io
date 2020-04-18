@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { Layout } from '@components';
 import styled from 'styled-components';
 import { Main, theme } from '@styles';
+import Helmet from 'react-helmet';
 const { colors } = theme;
 
 const StyledPostContainer = styled(Main)`
@@ -40,6 +41,11 @@ const PostTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location}>
+      <Helmet>
+        <title>{title} | Ajwad Shaikh</title>
+        <link rel="canonical" href="https://ajwad-shaikh.github.io/pensieve" />
+      </Helmet>
+
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>

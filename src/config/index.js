@@ -1,15 +1,15 @@
 module.exports = {
   siteTitle: 'Ajwad Shaikh | Software Development Engineer',
   siteDescription:
-    'Brittany Chiang is a software engineer based in Boston, MA who specializes in developing (and occasionally designing) exceptional, high-quality websites and applications.',
+    'Ajwad Shaikh is a software development engineer, based in Mumbai, exploring opportunities to build and democratize technology for the next billion internet users with a keen focus on mobile.',
   siteKeywords:
-    'Brittany Chiang, Brittany, Chiang, bchiang7, software engineer, front-end engineer, web developer, javascript, northeastern',
+    'Ajwad Shaikh, Ajwad, Shaikh, ajwad-shaikh, software engineer, backend engineer, web developer, javascript, android, IIITDM Jabalpur, react, mobile developer',
   siteUrl: 'https://brittanychiang.com',
   siteLanguage: 'en_US',
-  googleAnalyticsID: 'UA-45666519-2',
-  googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
-  name: 'Brittany Chiang',
-  location: 'Boston, MA',
+  googleAnalyticsID: 'UA-99312687-3',
+  googleVerification: '',
+  name: 'Ajwad Shaikh',
+  location: 'Mumbai, India',
   email: 'shaikhajwad10@gmail.com',
   github: 'https://github.com/ajwad-shaikh',
   twitterHandle: '@AjwadShaikh3',
@@ -19,7 +19,7 @@ module.exports = {
       url: 'https://github.com/ajwad-shaikh',
     },
     {
-      name: 'Linkedin',
+      name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/ajwad-shaikh',
     },
     {
