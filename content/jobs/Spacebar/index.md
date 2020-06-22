@@ -7,4 +7,4 @@ range: 'Dec 2017'
 url: 'https://spacebar.in/'
 ---
 
--Created researched and quality content for clients' technical blogs on Big Data, AI, and Blockchain.
+- Created researched and quality content for clients' technical blogs on Big Data, AI, and Blockchain.
