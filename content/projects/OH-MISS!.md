@@ -9,7 +9,7 @@ tech:
   - Vue.js
   - Firebase
 company: 'IIITDM Jabalpur'
-showInProjects: false
+showInProjects: true
 ---
 
 **O**cean **H**ealth **M**onitoring **I**nstrument **S**tuck to a **S**hip

@@ -23,6 +23,10 @@ module.exports = {
       url: 'https://www.linkedin.com/in/ajwad-shaikh',
     },
     {
+      name: 'PlayStore',
+      url: 'https://play.google.com/store/apps/dev?id=4943817150505607777',
+    },
+    {
       name: 'Instagram',
       url: 'https://www.instagram.com/hash.include_ajwad_',
     },

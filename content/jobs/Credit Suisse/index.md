@@ -3,7 +3,7 @@ date: '2020-05-10'
 title: 'Intern, Technology'
 company: 'Credit Suisse'
 location: 'Pune, India (Remote | COVID-19)'
-range: 'May 2020 - present'
+range: 'May 2020 - July 2020'
 url: 'https://www.credit-suisse.com/'
 ---
 
