@@ -7,7 +7,7 @@ tech:
   - Raspberry Pi
   - Python
 company: 'IIITDM Jabalpur'
-showInProjects: true
+showInProjects: false
 ---
 
 FindLyfCamera plays the raw H.264 video from a Raspberry Pi and sends back controls for a SnakeBot - FindLyf.

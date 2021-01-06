@@ -8,7 +8,7 @@ tech:
   - Java
   - Jitpack
 company: ''
-showInProjects: true
+showInProjects: false
 ---
 
 AmazingEditText is a lightweight open-source library that unleashes the power of the basic Android EditText to offer a stylish ready-to-embed frontend component. The idea is inspired to replicate EditTexts in story mode on WhatsApp or Instagram!

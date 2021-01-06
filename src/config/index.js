@@ -35,6 +35,10 @@ module.exports = {
       url: 'https://twitter.com/AjwadShaikh3',
     },
     {
+      name: 'Unity',
+      url: 'https://play.unity.com/u/ajwad-shaikh',
+    },
+    {
       name: 'CodeChef',
       url: 'https://codechef.com/users/ajwad_code0101',
     },

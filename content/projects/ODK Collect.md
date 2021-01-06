@@ -9,7 +9,7 @@ tech:
   - JavaRosa
   - Google Cloud
 company: 'Open Data Kit'
-showInProjects: true
+showInProjects: false
 ---
 
 Open Source Contributions made to ODK Collect App. ODK Collect is an Android app for filling out forms. It's been used to collect billions of data points in challenging environments around the world. Contribute and make the world a better place!

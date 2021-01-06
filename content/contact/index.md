@@ -1,10 +1,16 @@
 ---
 title: 'Get In Touch'
-buttonText: 'Say Hello'
+buttonText: 'Say Hi!'
 ---
 
-Currently, I am actively seeking a 6-month internship in an SDE role from December 2020 onwards as a part of my academic internship semester.
+I prefer being addressed as Ajwad (he/him/his). _Alhamdulillah,_ I am currently positioned in a satisfactory role and not looking for a change.
 
-Apart from that, my inbox is open to freelance proposals, pro-bono work, quiz fundae, poetry snippets, communist manifestos, quality dank memes, or even a simple 'hi'!
+However, I am always looking for meaningful ways to support underprivileged communities, in tech or otherwise.
+
+_I can listen, observe, share, talk, understand, and do._
+
+Reach out for anything and everything, and I shall do my bit, _Inshallah._
+
+Apart from that, my inbox is open to quiz fundae, poetry snippets, communist manifestos, quality dank memes, or even a simple 'hi'!
 
 Drop a mail and I'll reply within a day or two.

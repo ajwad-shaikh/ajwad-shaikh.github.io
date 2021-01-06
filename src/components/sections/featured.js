@@ -222,7 +222,7 @@ const Featured = ({ data }) => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, behance, playstore, cover } = frontmatter;
+            const { external, title, tech, github, behance, playstore, cover, unity } = frontmatter;
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <StyledContent>
@@ -276,6 +276,15 @@ const Featured = ({ data }) => {
                         <FormattedIcon name="PlayStore" />
                       </a>
                     )}
+                    {unity && (
+                      <a
+                        href={unity}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        aria-label="Unity Play Link">
+                        <FormattedIcon name="Unity" />
+                      </a>
+                    )}
                     {external && (
                       <a
                         href={external}
@@ -298,7 +307,9 @@ const Featured = ({ data }) => {
                           ? github
                           : playstore
                             ? playstore
-                            : '#'
+                            : unity
+                              ? unity
+                              : '#'
                   }
                   target="_blank"
                   rel="nofollow noopener noreferrer">

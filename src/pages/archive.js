@@ -142,6 +142,7 @@ const ArchivePage = ({ location, data }) => {
                     title,
                     tech,
                     company,
+                    unity,
                   } = node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -202,6 +203,15 @@ const ArchivePage = ({ location, data }) => {
                               <FormattedIcon name="Behance" />
                             </a>
                           )}
+                          {unity && (
+                            <a
+                              href={unity}
+                              target="_blank"
+                              rel="nofollow noopener noreferrer"
+                              aria-label="Unity Play Link">
+                              <FormattedIcon name="Unity" />
+                            </a>
+                          )}
                         </span>
                       </td>
                     </tr>
@@ -238,6 +248,7 @@ export const pageQuery = graphql`
             android
             company
             behance
+            unity
           }
           html
         }

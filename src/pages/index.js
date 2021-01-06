@@ -98,6 +98,7 @@ export const pageQuery = graphql`
             github
             behance
             playstore
+            unity
             external
           }
           html
@@ -119,6 +120,7 @@ export const pageQuery = graphql`
             github
             behance
             playstore
+            unity
             external
           }
           html
