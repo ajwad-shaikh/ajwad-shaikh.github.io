@@ -3,7 +3,7 @@ title: 'Get In Touch'
 buttonText: 'Say Hi!'
 ---
 
-I prefer being addressed as Ajwad (he/him/his). _Alhamdulillah,_ I am currently positioned in a satisfactory role and not looking for a change.
+I prefer being addressed as Ajwad (he/him). _Alhamdulillah,_ I am currently positioned in a satisfactory role and not looking for a change.
 
 However, I am always looking for meaningful ways to support underprivileged communities, in tech or otherwise.
 

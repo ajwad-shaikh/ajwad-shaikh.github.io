@@ -5,4 +5,6 @@ subtitle: 'I build for the next billion.'
 contactText: 'Get In Touch'
 ---
 
-I'm a software development engineer, based in Mumbai, exploring opportunities to build and democratize technology for the next billion internet users.
+I'm a software engineer keen to design, build, solve, and democratize technology for the next billion internet users one commit at a time.
+
+I go by the pronouns ['he/him'](https://www.mypronouns.org/he-him)
