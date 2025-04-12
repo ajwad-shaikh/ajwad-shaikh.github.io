@@ -32,11 +32,11 @@ module.exports = {
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/AjwadShaikh3',
+      url: 'https://x.com/AjwadShaikh3',
     },
     {
       name: 'Unity',
-      url: 'https://play.unity.com/u/ajwad-shaikh',
+      url: 'https://play.unity.com/en/user/7f6b0111-d95a-47a1-8fe7-ae82c2ebabf2',
     },
     {
       name: 'CodeChef',
