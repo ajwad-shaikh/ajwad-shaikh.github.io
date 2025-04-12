@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ajwad-shaikh.github.io/sitemap.xml
+Sitemap: https://ajwad-shaikh.github.io/sitemap-index.xml
 Host: https://ajwad-shaikh.github.io
