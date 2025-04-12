@@ -91,7 +91,8 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  img {
+  img,
+  .gatsby-image-wrapper {
     width: 100%;
     max-width: 100%;
     vertical-align: middle;
@@ -260,10 +261,6 @@ const GlobalStyle = createGlobalStyle`
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
-  }
-
-  .gatsby-image-outer-wrapper {
-    height: 100%;
   }
 
   ${TransitionStyles};

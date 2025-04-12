@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { FormattedIcon } from '@components/icons';
@@ -106,7 +106,7 @@ const StyledLinkWrapper = styled.div`
     }
   }
 `;
-const StyledFeaturedImg = styled(Img)`
+const StyledFeaturedImg = styled(GatsbyImage)`
   width: 100%;
   max-width: 100%;
   vertical-align: middle;
@@ -222,7 +222,9 @@ const Featured = ({ data }) => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, behance, playstore, cover, unity } = frontmatter;
+            const { external, title, tech, github, behance, playstore, unity, cover } = frontmatter;
+            const image = getImage(cover);
+
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <StyledContent>
@@ -285,7 +287,7 @@ const Featured = ({ data }) => {
                         <FormattedIcon name="Unity" />
                       </a>
                     )}
-                    {external && (
+                    {external && !github && !behance && !playstore && !unity && (
                       <a
                         href={external}
                         target="_blank"
@@ -298,22 +300,10 @@ const Featured = ({ data }) => {
                 </StyledContent>
 
                 <StyledImgContainer
-                  href={
-                    external
-                      ? external
-                      : behance
-                        ? behance
-                        : github
-                          ? github
-                          : playstore
-                            ? playstore
-                            : unity
-                              ? unity
-                              : '#'
-                  }
+                  href={external ? external : github ? github : '#'}
                   target="_blank"
                   rel="nofollow noopener noreferrer">
-                  <StyledFeaturedImg fluid={cover.childImageSharp.fluid} alt={title} />
+                  <StyledFeaturedImg image={image} alt={title} />
                 </StyledImgContainer>
               </StyledProject>
             );

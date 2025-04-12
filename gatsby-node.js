@@ -12,58 +12,60 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const postTemplate = path.resolve(`src/templates/post.js`);
   const tagTemplate = path.resolve('src/templates/tag.js');
 
-  const result = await graphql(`
-    {
-      postsRemark: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/posts/" } }
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
-        edges {
-          node {
-            frontmatter {
-              slug
+    const result = await graphql(`
+      {
+        postsRemark: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/posts/" } }
+          sort: { frontmatter: { date: DESC } }
+          limit: 1000
+        ) {
+          edges {
+            node {
+              frontmatter {
+                slug
+              }
             }
           }
         }
-      }
-      tagsGroup: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___tags) {
-          fieldValue
+        tagsGroup: allMarkdownRemark(limit: 2000) {
+          group(field: { frontmatter: { tags: SELECT } }) {
+            fieldValue
+          }
         }
       }
+    `);
+
+    // Handle errors
+    if (result.errors) {
+      reporter.panicOnBuild(`Error while running GraphQL query.`);
+      return;
     }
-  `);
 
-  // Handle errors
-  if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`);
-    return;
-  }
+    // Create post detail pages
+    const posts = result.data.postsRemark.edges;
 
-  // Create post detail pages
-  const posts = result.data.postsRemark.edges;
-
-  posts.forEach(({ node }) => {
-    createPage({
-      path: node.frontmatter.slug,
-      component: postTemplate,
-      context: {},
+    posts.forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.slug,
+        component: postTemplate,
+        context: {
+          slug: node.frontmatter.slug,
+        },
+      });
     });
-  });
 
-  // Extract tag data from query
-  const tags = result.data.tagsGroup.group;
-  // Make tag pages
-  tags.forEach(tag => {
-    createPage({
-      path: `/pensieve/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: tagTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
+    // Create tag pages
+    const tags = result.data.tagsGroup.group;
+
+    tags.forEach(tag => {
+      createPage({
+        path: `/pensieve/tags/${_.kebabCase(tag.fieldValue)}/`,
+        component: tagTemplate,
+        context: {
+          tag: tag.fieldValue,
+        },
+      });
     });
-  });
 };
 
 // https://www.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig

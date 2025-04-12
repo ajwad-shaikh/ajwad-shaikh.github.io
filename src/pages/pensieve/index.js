@@ -191,10 +191,10 @@ PensievePage.propTypes = {
 export default PensievePage;
 
 export const pageQuery = graphql`
-  {
+  query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/posts/" }, frontmatter: { draft: { ne: true } } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {fileAbsolutePath: {regex: "/posts/"}, frontmatter: {draft: {ne: true}}}
+      sort: {frontmatter: {date: DESC}}
     ) {
       edges {
         node {

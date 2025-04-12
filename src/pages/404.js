@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import { Layout } from '@components';
@@ -30,7 +30,7 @@ const StyledHomeButton = styled(Link)`
   margin-top: 40px;
 `;
 
-const NotFoundPage = ({ location }) => {
+const NotFoundPage = ({ location, data }) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -57,6 +57,17 @@ const NotFoundPage = ({ location }) => {
 
 NotFoundPage.propTypes = {
   location: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default NotFoundPage;
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
